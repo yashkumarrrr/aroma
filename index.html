@@ -1,279 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>PureAromaExports | Premium Indian Fragrance Exporters</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PureAromaExports | Premium Indian Fragrance Exporter</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-/* ------- Global Style ------- */
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  background: #faf7f2;
-  color: #333;
-  overflow-x: hidden;
-}
-
-h1, h2, h3 {
-  margin: 0;
-  font-weight: 600;
-}
-
-/* ---------- Smooth Fade Animation ----------- */
-.fade-in {
-  animation: fadeIn 1.2s ease-in-out;
-}
-@keyframes fadeIn {
-  0% {opacity:0; transform: translateY(20px);}
-  100% {opacity:1; transform: translateY(0);}
-}
-
-/* ---------- Navbar ----------- */
-nav {
-  width: 100%;
-  padding: 15px 40px;
-  background: #ffffffd9;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  backdrop-filter: blur(10px);
-}
-
-nav .logo {
-  font-size: 28px;
-  font-weight: 800;
-  color: #5a3e36;
-}
-
-nav ul {
-  float: right;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-left: 25px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-weight: 500;
-  color: #333;
-  transition: 0.3s;
-}
-
-nav ul li a:hover {
-  color: #d6924a;
-}
-
-/* ---------- Hero Section ----------- */
-.hero {
-  background: url('https://i.ibb.co/P99H6qS/aroma-bg.jpg') center/cover no-repeat;
-  height: 85vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  padding: 20px;
-  position: relative;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.45);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
-}
-
-.hero h1 {
-  font-size: 48px;
-  animation: fadeIn 1.4s ease-in-out;
-}
-
-.hero p {
-  margin-top: 15px;
-  font-size: 20px;
-  animation: fadeIn 1.8s ease-in-out;
-}
-
-.hero button {
-  margin-top: 25px;
-  padding: 14px 32px;
-  background: #d6924a;
-  color: white;
-  font-size: 18px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.hero button:hover {
-  background: #b67432;
-}
-
-/* ---------- Section Styling ----------- */
-section {
-  padding: 70px 40px;
-  text-align: center;
-}
-
-.section-title {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #5a3e36;
-}
-
-/* ---------- Product Cards ----------- */
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-}
-
-.product-card {
-  background: white;
-  width: 300px;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.09);
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.product-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-}
-
-.product-card img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.product-card h3 {
-  margin-top: 15px;
-  font-size: 22px;
-  color: #5a3e36;
-}
-
-/* ---------- Contact Section ----------- */
-.contact-box {
-  background: white;
-  max-width: 550px;
-  margin: 30px auto;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-}
-
-.contact-box a {
-  color: #d6924a;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* ---------- Footer ----------- */
-footer {
-  background: #5a3e36;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 50px;
-}
-
+body{margin:0;font-family:'Inter',sans-serif;background:#fefaf5;color:#1f2937;scroll-behavior:smooth;overflow-x:hidden}
+a{text-decoration:none}
+header{position:fixed;top:0;width:100%;background:#ffffff;box-shadow:0 4px 15px rgba(0,0,0,0.08);z-index:100;transition:0.3s}
+nav{max-width:1400px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:16px 30px}
+nav img{height:50px;transition:0.5s}
+nav img:hover{transform:scale(1.08)}
+nav a{margin-left:25px;color:#374151;font-weight:500;position:relative;transition:0.3s}
+nav a:hover{color:#d69d4b}
+nav a::after{content:'';position:absolute;left:0;bottom:-4px;width:0%;height:2px;background:#d69d4b;transition:0.3s}
+nav a:hover::after{width:100%}
+.hero{position:relative;height:90vh;background:url('https://i.ibb.co/P99H6qS/aroma-bg.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;color:white;}
+.hero::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.45)}
+.hero-content{position:relative;z-index:2;text-align:center;max-width:900px;animation:fadeInUp 1.5s ease-in-out}
+.hero-content h1{font-family:'Merriweather',serif;font-size:56px;margin-bottom:20px;line-height:1.2;letter-spacing:1px}
+.hero-content p{font-size:22px;margin-bottom:30px;color:#f3f4f6}
+.hero-content .cta{background:#d69d4b;color:#fff;padding:16px 32px;border-radius:8px;font-size:18px;font-weight:600;transition:0.3s}
+.hero-content .cta:hover{background:#b37432;transform:scale(1.05)}
+@keyframes fadeInUp{0%{opacity:0;transform:translateY(50px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes floatEmoji{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes popupIn{0%{transform:scale(0.5);opacity:0}100%{transform:scale(1);opacity:1}}
+section{padding:100px 20px}
+.section-title{text-align:center;font-size:36px;font-weight:700;color:#5a3e36;margin-bottom:20px}
+.section-sub{text-align:center;color:#6b7280;font-size:18px;margin-bottom:60px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px}
+.card{background:#fff;padding:30px;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,0.08);transition:0.4s;cursor:pointer;animation:fadeInUp 1s ease-in-out}
+.card:hover{transform:translateY(-10px) scale(1.02);box-shadow:0 15px 40px rgba(0,0,0,0.12)}
+.flags-container{overflow:hidden;white-space:nowrap;margin-top:30px}
+.flags-scroll{display:inline-block;animation:scrollFlags 20s linear infinite;font-size:32px}
+@keyframes scrollFlags{0%{transform:translateX(100%)}100%{transform:translateX(-100%)}}
+.testimonial-slider{position:relative;overflow:hidden;max-width:800px;margin:auto}
+.testimonial-track{display:flex;transition:transform 0.5s ease-in-out}
+.testimonial{flex:0 0 100%;background:#fdf6f0;padding:25px;border-radius:12px;position:relative;font-style:italic;animation:fadeInUp 1.2s ease-in-out;text-align:center}
+.testimonial img{border-radius:50%;width:60px;height:60px;object-fit:cover;margin-bottom:12px}
+.testimonial b{display:block;margin-top:10px}
+form{max-width:550px;margin:auto;display:grid;gap:16px}
+input,select,textarea{padding:14px;border-radius:8px;border:1px solid #d1d5db;font-size:16px}
+button{background:#d69d4b;color:#fff;padding:16px;border:none;border-radius:8px;font-size:16px;font-weight:600;cursor:pointer;transition:0.3s}
+button:hover{background:#b37432;transform:scale(1.05)}
+footer{background:#111827;color:#d1d5db;padding:50px 20px}
+footer .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px}
+footer .grid div h4{color:#fff;margin-bottom:12px}
+.whatsapp{position:fixed;bottom:24px;right:24px;background:#25d366;color:#fff;padding:16px 20px;border-radius:50%;font-size:26px;box-shadow:0 6px 20px rgba(0,0,0,0.25);animation:bounce 2s infinite;z-index:300}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.popup{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);justify-content:center;align-items:center;z-index:400;animation:fadeInUp 0.8s ease-in-out}
+.popup-content{background:#fff;padding:40px;border-radius:15px;max-width:550px;width:90%;text-align:center;position:relative;animation:popupIn 0.8s ease-out}
+.popup-content button.close-popup{position:absolute;top:12px;right:16px;background:none;border:none;font-size:24px;cursor:pointer;transition:0.3s}
+.popup-content button.close-popup:hover{color:#d69d4b}
+.emoji{font-size:28px;display:inline-block;animation:floatEmoji 1.5s infinite alternate}
 </style>
 </head>
-
 <body>
-
-<!-- NAVBAR -->
+<header>
 <nav>
-  <span class="logo">PureAromaExports</span>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#products">Products</a></li>
-    <li><a href="#private">Private Label</a></li>
-    <li><a href="#wholesale">Wholesale</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<div class="hero" id="home">
-  <div class="hero-content">
-    <h1>Premium Indian Fragrance Products</h1>
-    <p>Sambrani Dhoop Cups • Incense Cones • Resin Blends • Aroma Products</p>
-    <button onclick="window.location='#contact'">Request Wholesale Catalog</button>
-  </div>
+<img src="logo.png" alt="PureAromaExports">
+<div>
+<a href="#products">Products</a>
+<a href="#about">Who We Are</a>
+<a href="#process">Process</a>
+<a href="#markets">Markets</a>
+<a href="#contact">Contact</a>
 </div>
+</nav>
+</header>
 
-<!-- PRODUCTS -->
-<section id="products" class="fade-in">
-  <h2 class="section-title">Our Bestselling Exports</h2>
-
-  <div class="products">
-
-    <div class="product-card fade-in">
-      <img src="https://i.ibb.co/fkCkSv5/dhoop-cup.jpg" />
-      <h3>Sambrani Dhoop Cups – Rose</h3>
-      <p>12 Cups • High Aroma • Export Quality</p>
-    </div>
-
-    <div class="product-card fade-in">
-      <img src="https://i.ibb.co/nkx0h6b/incense-cone.jpg" />
-      <h3>Incense Cones</h3>
-      <p>20 pcs • Multiple Fragrances</p>
-    </div>
-
-    <div class="product-card fade-in">
-      <img src="https://i.ibb.co/Z8pLQVT/resin.jpg" />
-      <h3>Resin Incense</h3>
-      <p>Benzoin • Frankincense • Myrrh</p>
-    </div>
-
-  </div>
+<!-- Hero Section -->
+<section class="hero">
+<div class="hero-content">
+<h1>Premium Indian Dhoop & Incense Exporter <span class="emoji">🌸</span></h1>
+<p>Wholesale & private-label export of premium Indian fragrance products to global buyers <span class="emoji">🌍</span></p>
+<a class="cta" href="PureAromaExports_Wholesale_Catalog.pdf" target="_blank">Download Catalog</a>
+<a class="cta secondary" href="#contact">Send Inquiry</a>
+</div>
 </section>
 
-<!-- PRIVATE LABEL -->
-<section id="private" class="fade-in">
-  <h2 class="section-title">Private Label & Custom Branding</h2>
-  <p>Build your own incense brand with customized packaging, fragrances, and branding options.</p>
+<!-- Who We Are Grid -->
+<section id="about" style="background:#fff">
+<h2 class="section-title">Who We Are</h2>
+<div class="grid">
+<div class="card"><img src="logo.png" alt="PureAromaExports" style="width:80px;margin-bottom:16px"><h3>Trusted Indian Exporter</h3><p>Certified IEC & GST, supplying premium incense globally.</p></div>
+<div class="card"><img src="https://i.ibb.co/Z8pLQVT/resin.jpg" alt="Quality" style="width:80px;margin-bottom:16px"><h3>Quality Products</h3><p>Sambrani Dhoop, Incense Cones & Resin Blends crafted for aroma perfection.</p></div>
+<div class="card"><img src="https://i.ibb.co/nkx0h6b/incense-cone.jpg" alt="Global Market" style="width:80px;margin-bottom:16px"><h3>Global Reach</h3><p>Supplying USA, UK, UAE and more with trusted shipping and service.</p></div>
+<div class="card"><img src="https://i.ibb.co/fkCkSv5/dhoop-cup.jpg" alt="Private Label" style="width:80px;margin-bottom:16px"><h3>Private Label Options</h3><p>Custom branding for your incense business with premium packaging.</p></div>
+</div>
 </section>
 
-<!-- WHOLESALE -->
-<section id="wholesale" class="fade-in">
-  <h2 class="section-title">Wholesale & Export Support</h2>
-  <p>Fast DHL/FedEx shipping • Factory Prices • Standard Export Packaging</p>
+<!-- Export Products Section -->
+<section id="products">
+<h2 class="section-title">Our Export Products</h2>
+<div class="grid">
+<div class="card"><img src="https://i.ibb.co/fkCkSv5/dhoop-cup.jpg" alt="Dhoop Cups" style="width:100%"><h3>Sambrani Dhoop Cups</h3><p>High aroma, export quality.</p></div>
+<div class="card"><img src="https://i.ibb.co/nkx0h6b/incense-cone.jpg" alt="Incense Cones" style="width:100%"><h3>Incense Cones</h3><p>20 pcs per pack, multiple fragrances.</p></div>
+<div class="card"><img src="https://i.ibb.co/Z8pLQVT/resin.jpg" alt="Resin" style="width:100%"><h3>Resin Incense</h3><p>Benzoin, Frankincense, Myrrh</p></div>
+</div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="fade-in">
-  <h2 class="section-title">Contact Us</h2>
-  
-  <div class="contact-box fade-in">
-    <p><b>WhatsApp:</b> <a href="https://wa.me/91XXXXXXXXXX">+91 XXXXX XXXXX</a></p>
-    <p><b>Email:</b> purearomaexports@gmail.com</p>
-    <p><b>Instagram:</b> @purearomaexports</p>
-  </div>
+<!-- Export Process Timeline -->
+<section id="process" style="background:#fff">
+<h2 class="section-title">Our Export Process</h2>
+<div class="grid">
+<div class="card"><h3>1. Order Received</h3><p>Receive client inquiry and order details.</p></div>
+<div class="card"><h3>2. Quality Check</h3><p>Ensure all products meet premium export standards.</p></div>
+<div class="card"><h3>3. Packaging & Label</h3><p>Private label or standard packaging as per requirement.</p></div>
+<div class="card"><h3>4. Shipping</h3><p>Fast & reliable international shipping via DHL/FedEx.</p></div>
+<div class="card"><h3>5. Delivery & Support</h3><p>Track shipments and provide client support worldwide.</p></div>
+</div>
 </section>
 
-<!-- FOOTER -->
+<!-- Testimonials Carousel -->
+<section id="clients">
+<h2 class="section-title">Client Feedback</h2>
+<div class="testimonial-slider">
+<div class="testimonial-track" id="testimonialTrack">
+<div class="testimonial"><img src="https://i.ibb.co/9vR8f2g/client1.jpg" alt="Client"><p>"Excellent quality and prompt delivery. Highly recommend PureAromaExports!"</p><b>John D., USA</b></div>
+<div class="testimonial"><img src="https://i.ibb.co/9vR8f2g/client2.jpg" alt="Client"><p>"Private label service helped us launch our brand smoothly."</p><b>Sarah K., UK</b></div>
+<div class="testimonial"><img src="https://i.ibb.co/9vR8f2g/client3.jpg" alt="Client"><p>"Consistent aroma quality and top-notch customer support."</p><b>Ahmed R., UAE</b></div>
+</div>
+</div>
+</section>
+
+<!-- Contact Form -->
+<section id="contact">
+<h2 class="section-title">Inquiry Form</h2>
+<form>
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<input type="text" name="country" placeholder="Country" required>
+<input type="number" name="quantity" placeholder="Quantity" required>
+<textarea name="message" placeholder="Message" rows="5"></textarea>
+<button type="submit">Send Inquiry</button>
+</form>
+</section>
+
+<!-- Footer -->
 <footer>
-  © 2025 PureAromaExports — All Rights Reserved.
+<div class="grid">
+<div><h4>PureAromaExports</h4><p>Premium Indian fragrance exporter with global reach. IEC & GST certified.</p></div>
+<div><h4>Contact</h4><p>Email: purearomaexports@gmail.com</p><p>WhatsApp: +91 XXXXX XXXXX</p></div>
+<div><h4>Social</h4><p>Instagram: @purearomaexports</p></div>
+</div>
+<p style="text-align:center;margin-top:30px;color:#9ca3af">© 2025 PureAromaExports — All Rights Reserved.</p>
 </footer>
 
+<!-- WhatsApp Bubble -->
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp" target="_blank">💬</a>
+
+<script>
+window.onload=function(){setTimeout(()=>{document.getElementById('popup')?.style.display='flex';},2000);startTestimonialCarousel();}
+function closePopup(){document.getElementById('popup')?.style.display='none';}
+function startTestimonialCarousel(){
+  const track=document.getElementById('testimonialTrack');
+  const slides=track.children;
+  let index=0;
+  setInterval(()=>{
+    index=(index+1)%slides.length;
+    track.style.transform='translateX(-'+index*100+'%)';
+  },4000);
+}
+</script>
 </body>
 </html>
